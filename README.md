@@ -10,6 +10,10 @@ TODO stuff I've to implement inside my App. For every point I'll discuss more in
 - [ ] Study business logic
 - [ ] More ...
 
+
+This demo App require to use a defined Git Flow so except for the first two point all the other implementation
+will be done using branches and making PR eg: feature/redux -> for creating redux store and saga middleware.
+
 ## Retro Engineering
 
 
