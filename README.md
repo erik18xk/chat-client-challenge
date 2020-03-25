@@ -43,4 +43,24 @@ I needed to jump straight away into the development without caring to much about
 This is why I've decided to use Create React App.
 
 
+## Add Redux and Redux Saga
+
+
+For the purpose of this Demo App I've decided to use Redux as state manager.
+
+#### Why saga? 
+
+I'll use saga for handle all the async call to the express server
+ - login
+ - get contacts
+ - get historical messages
+ - logout
+ 
+I also want to add some persistent logic: after a closer look to the node App I've realized that
+the sessionId is the driver for handle the communication. This means If the user already logged in I don't want to
+ask him again for username and secret, instead I'll redirect the user straight to the Dashboard, providing him all
+the information. I'll save the sessionId token in local/session Storage -> don't know yet.
+
+
+
  
