@@ -4,8 +4,8 @@ TODO stuff I've to implement inside my App. For every point I'll discuss more in
 
 - [x] Retro Engineering for understand BE side and Swagger endpoint
 - [x] Init Client App with Create React App
-- [ ] Add Redux, Redux saga -> create reducer and INIT fn
-- [ ] Add preprocessor css (SCSS) for the style
+- [x] Add Redux, Redux saga -> create reducer and INIT fn
+- [x] Add preprocessor css (SCSS) for the style
 - [ ] Add React Router for html5 (history) navigation
 - [ ] Study business logic
 - [ ] More ...
@@ -60,6 +60,35 @@ I also want to add some persistent logic: after a closer look to the node App I'
 the sessionId is the driver for handle the communication. This means If the user already logged in I don't want to
 ask him again for username and secret, instead I'll redirect the user straight to the Dashboard, providing him all
 the information. I'll save the sessionId token in local/session Storage -> don't know yet.
+
+
+## Preprocessor Scss
+
+Even if nowadays I'm more into [css-next](https://cssnext.github.io/) for this DEMO I'll use
+[scss](https://sass-lang.com/) preprocessor following [BEM](https://en.bem.info/methodology/quick-start/) methodology.
+The folder structure for the style will be:
+
+```
+.
+├── styles
+|   ├── components
+|   |   └── all components styles
+|   └── common
+|       ├── mixins
+|       |   ├── breakpoints
+|       |   ├── other
+|       └── colours
+```
+
+Following this folder structure I can loosely couple my components and share common styles.
+
+
+#### Breakpoints
+
+This Application will have just two breakpoints, when the app is above 
+650px is considered mobile otherwise desktop.
+
+
 
 
 
