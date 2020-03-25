@@ -4,8 +4,8 @@ TODO stuff I've to implement inside my App. For every point I'll discuss more in
 
 - [x] Retro Engineering for understand BE side and Swagger endpoint
 - [x] Init Client App with Create React App
-- [] Add Redux, Redux saga -> create reducer and INIT fn
-- [] Add preprocessor css (SCSS) for the style
+- [ ] Add Redux, Redux saga -> create reducer and INIT fn
+- [ ] Add preprocessor css (SCSS) for the style
 - [ ] Add React Router for html5 (history) navigation
 - [ ] Study business logic
 - [ ] More ...
