@@ -1,6 +1,8 @@
 import React from 'react';
 import { Route, Switch, Link } from 'react-router-dom';
+import Login from "./pages/Login";
 import './App.scss';
+
 
 
 // Test for check correct implementation of react-router.
@@ -18,12 +20,10 @@ import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-        {/*<Switch>
-          <Route exact path="/" component={Example} />
-          <Route path="/more" component={Another} />
-        </Switch>*/}
-        <h1> Chat APP </h1>
+    <div className="main__wrapper">
+        <Switch>
+          <Route exact path="/" component={Login} />
+        </Switch>
     </div>
   );
 }

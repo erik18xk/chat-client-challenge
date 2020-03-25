@@ -1,5 +1,5 @@
 const storeName = 'CHAT';
 export default {
     INITIALIZE: `${storeName}.INITIALIZE`,
-    ANOTHER: `${storeName}.ANOTHER`,
+    DO_LOGIN: `${ storeName }.DO_LOGIN`,
 };

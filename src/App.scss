@@ -1,5 +1,15 @@
-.App {
+@import "styles/common/mixins/brakpoints";
+@import "styles/common/colours";
+
+.main__wrapper {
+  display: flex; // Initialize Flex container
+  flex: 1;
+  box-sizing: border-box; // Consider the margin
+  max-width: 650px;
+  min-height: 100vh;
+  margin: 0 auto;
   text-align: center;
   color: red;
+  background-color: $gray-dark;
 }
 

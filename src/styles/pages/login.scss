@@ -1,0 +1,50 @@
+@import '../common/colours';
+
+.login__container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  width: 100%;
+}
+
+
+.form__handler {
+  width: 100%;
+  display: flex;
+  flex:1;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  &__form {
+    margin: 6em auto;
+    background-color: $white;
+    display: flex;
+    flex: 1;
+    flex-flow: column;
+    min-width: 70%;
+
+    input {
+      box-sizing: border-box;
+      font-size: 14px;
+      flex-flow: column nowrap;
+      line-height: 20px;
+      border: 1px solid $gray-lighter;
+      background: $gray-mid;
+      padding: 8px 20px;
+      transition: border-color 350ms ease-out, color 350ms ease-out;
+      margin: 2em 4em;
+      outline: none;
+    }
+  }
+}
+
+.form__footer {
+  display: flex;
+  flex: 0; // TODO change this value
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-width: 100%;
+}
