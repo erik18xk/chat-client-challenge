@@ -6,7 +6,7 @@ TODO stuff I've to implement inside my App. For every point I'll discuss more in
 - [x] Init Client App with Create React App
 - [x] Add Redux, Redux saga -> create reducer and INIT fn
 - [x] Add preprocessor css (SCSS) for the style
-- [ ] Add React Router for html5 (history) navigation
+- [x] Add React Router for html5 (history) navigation
 - [ ] Study business logic
 - [ ] More ...
 
@@ -89,7 +89,21 @@ This Application will have just two breakpoints, when the app is above
 650px is considered mobile otherwise desktop.
 
 
+## React router
 
+React router will help my development, App component will be the wrapper of all pages and based on the path the page
+will be rendered with all his child component, following this structure:
+
+```
+.
+├── App
+|   ├── Login
+|   ├── Profile
+|   └── Contact
+|   |__ Chat
+```
+
+All the pages will have their child component called in the Render.
 
 
  
