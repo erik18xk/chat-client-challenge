@@ -19,10 +19,11 @@ will be done using branches and making PR eg: feature/redux -> for creating redu
 
 When starting the development of a client side application the first thing to do is understand the BE side.
 
-This example provide me a express server running with node, without any README. So I've downloaded the server App 
-on my pc. The App at the endpoint localhost:8080 has Swagger API, so I've jump right away to 
+This example provide me an express server running with node, without any README. So I've downloaded the server App 
+on my pc. The App at the endpoint localhost:8080 has Swagger API, so I've jump straight away to 
 [web.js](https://github.com/bemindinteractive/chat-server-challenge/blob/master/web.js) and 
-[index.js](https://github.com/bemindinteractive/chat-server-challenge/blob/master/lib/index.js).
+[index.js](https://github.com/bemindinteractive/chat-server-challenge/blob/master/lib/index.js) for understand how it 
+work and how I can use the API provided.
 
 After playing a while with HTTPie I've successfully logged in Tizio user and retrieved his contacts and historical messages.
 
@@ -38,7 +39,7 @@ If the response is 200 I'll get the sessionId that I need to use in the HTTP Hea
 
 
 This is a demo client for show my understanding of react and some architectural decision. For this purpose
-I needed to jump right away into the development without caring to much about init configuration.
+I needed to jump straight away into the development without caring to much about init configuration.
 This is why I've decided to use Create React App.
 
 
