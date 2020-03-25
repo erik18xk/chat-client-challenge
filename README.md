@@ -7,8 +7,10 @@ TODO stuff I've to implement inside my App. For every point I'll discuss more in
 - [x] Add Redux, Redux saga -> create reducer and INIT fn
 - [x] Add preprocessor css (SCSS) for the style
 - [x] Add React Router for html5 (history) navigation
-- [ ] Study business logic
-- [ ] More ...
+- [x] Study business logic
+- [ ] Login Page
+- [ ] Profile and Chat Page
+- [ ] More...
 
 
 This demo App require to use a defined Git Flow so except for the first two point all the other implementation
@@ -106,4 +108,15 @@ will be rendered with all his child component, following this structure:
 All the pages will have their child component called in the Render.
 
 
- 
+## Study business Logic
+
+With a deeper look to the images provided in the README I've noticed that I need to refactor the logic of Redux-Router
+cause on the Dashboard page I'll have to implement another Switch -> Nested Route cause I need to display the contacts
+and the profile page.
+This refactor will be done when the user can successfully login. So I'll jump into the design of the login page.
+
+
+## Login Page
+
+I've created the branch [feature/login]()
+in this branch I'll focus on the design of the page and the logic behind the login.
