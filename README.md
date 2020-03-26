@@ -59,10 +59,10 @@ I'll use saga for handle all the async call to the express server
  - logout
  
 I also want to add some persistent logic: after a closer look to the node App I've realized that
-the sessionId is the driver for handle the communication. This means If the user already logged in I don't want to
-ask him again for username and secret, instead I'll redirect the user straight to the Dashboard, providing him all
-the information. I'll save the sessionId token in local/session Storage -> don't know yet.
-
+the sessionId is the driver for handle the communication. This means that if the sessionId is stored 
+inside the cookie storage on the initSaga I want to call the /profile endpoint. 
+If the Response is ok(v) -> I'll render the dashboard, if the response is Err(v) I'll bring the user back to
+the Login page.
 
 ## Preprocessor Scss
 
