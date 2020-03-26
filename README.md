@@ -13,7 +13,6 @@ TODO stuff I've to implement inside my App. For every point I'll discuss more in
 - [ ] Profile Page
 - [x] Chat Page
 - [x] Eslint
-- [ ] More...
 
 
 This demo App require to use a defined Git Flow so except for the first two point all the other implementation
@@ -157,4 +156,20 @@ At this moment my app is working properly but I need to refactor some logic for 
  
 ## Eslint my code
 Now that everything is working I'm going to fix all the warning and clean all console.log() inside my code ;).
-The branch is [eslint]()
+The branch is [eslint](https://github.com/erik18xk/chat-client-challenge/commit/c59ca9b9498044f098ea37ab366c76121485f84d)
+
+
+## Final thoughts
+This is just a DEMO app but there's a lot of improvement that can be done:
+
+- [] Better styled login page :)
+- [] Api error handler -> now abort all the processes, need to refresh
+- [] Add profile page
+- [] text.scss for font-size based on breakpoints
+- [] Create a python script for smoke tests (don't like TDD when async is involved).
+
+
+Thanks for your time.
+
+Erik.
+
