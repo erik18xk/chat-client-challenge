@@ -27,7 +27,7 @@ const Login = () => {
                 </div>
             </div>
             <div className="form__footer">
-                <Button name="Submit" parentCallback={handleSubmit}></Button>
+                <Button name="Submit" parentCallback={handleSubmit} class="button button--full-width button--green"></Button>
             </div>
         </div>
     )

@@ -11,7 +11,18 @@ function* initSaga() {
     const user = yield call(userApi.checkAuth);
     if (user) {
         yield put(actions.setUser({ user }));
+        yield call(watchGetContacts);
     }
+}
+
+function* watchGetContacts() {
+    // TODO Double check get the auth value from selector and perform the call just if the user is auth
+    const contacts = yield call(userApi.getContacts);
+    if (contacts) {
+        yield put(actions.setContacts({contacts}));
+        console.log('Contacts are stored inside the redux store');
+    }
+    console.log(contacts);
 }
 
 function* watchLogin() {
@@ -20,6 +31,7 @@ function* watchLogin() {
         console.log(user);
         if (user) {
             yield put(actions.setUser( { user }));
+            yield call(watchGetContacts);
         }
     });
 }

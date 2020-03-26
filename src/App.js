@@ -22,7 +22,8 @@ const App = () => {
                 <Route exact path="/">
                     {isAuth ? <Redirect to="/dashboard" /> : <Login />}
                 </Route>
-                <PrivateRoute component={DashBoard} path="/dashboard" exact />
+                <PrivateRoute component={DashBoard} path="/dashboard"/>
+                <PrivateRoute component={DashBoard} path="/profile"/>
             </Switch>
         </div>
     )

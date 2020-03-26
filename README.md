@@ -8,8 +8,10 @@ TODO stuff I've to implement inside my App. For every point I'll discuss more in
 - [x] Add preprocessor css (SCSS) for the style
 - [x] Add React Router for html5 (history) navigation
 - [x] Study business logic
-- [ ] Login Page
-- [ ] Profile and Chat Page
+- [x] Login Page
+- [x] Contacts Page
+- [ ] Profile Page
+- [ ] Chat Page
 - [ ] More...
 
 
@@ -121,3 +123,12 @@ This refactor will be done when the user can successfully login. So I'll jump in
 I've created the branch [feature/login-user](https://github.com/erik18xk/chat-client-challenge/commit/62e017003807c2ee3da16f8af16f667d774e32ed)
 I'll use the provided /profile endpoint for check if the user has been authenticated before. This means that until the 
 sessionId is valid the user is authenticated.
+
+## Contact page
+
+The [dashboard](https://github.com/bemindinteractive/chat-client-challenge/blob/master/docs/images/profile.png) require
+a nested route whenever I want to display the contact page or my profile page. So in this branch [chat-profile]() I've set up the logic
+for handle such feature.
+First thing first I have to retrieve all the missing data from the api -> contacts of my current user.
+I'll make this fetch call after the login/check, saving the response the the contacts data. I've added some style followind
+the screenshot provided to me.

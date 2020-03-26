@@ -1,0 +1,11 @@
+@import '../common/colours';
+
+.contact-list__container {
+  display: flex;
+  flex: 1;
+  flex-flow: column;
+  background-color: $white;
+  border-bottom: 1px solid $gray-mid;
+  border-right: 1px solid $gray-mid;
+  border-left: 1px solid $gray-mid;
+}

@@ -13,6 +13,16 @@ const LoginUser = async (payload) => {
 const checkAuth = async () => {
     const uri = `http://localhost:8080/profile/`;
     const response = await HTTPClient().get(uri);
+    if (!response.ok) {
+        return;
+    }
+    const json = await response.json();
+    return json;
+}
+
+const getContacts = async () => {
+    const uri = `http://localhost:8080/contacts/`;
+    const response = await HTTPClient().get(uri);
     const json = await response.json();
     return json;
 }
@@ -20,4 +30,5 @@ const checkAuth = async () => {
 export default {
     LoginUser,
     checkAuth,
+    getContacts,
 }
