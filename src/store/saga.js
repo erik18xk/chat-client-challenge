@@ -1,6 +1,7 @@
 import {  delay, takeLatest, all, call, put, select } from 'redux-saga/effects';
 import types from './types';
 import actions from "./actions";
+import moment from "moment";
 // For use real api call change process.env.NODE_ENV === 'development' into process.env.NODE_ENV !== 'development'
 const userApi = process.env.NODE_ENV === 'development' ? require('./api').default : require('./api').default; // Add mock data
 
@@ -25,6 +26,33 @@ function* watchGetContacts() {
     console.log(contacts);
 }
 
+function* watchFetchMessagesById() {
+    yield takeLatest(types.FETCH_MESSAGES_BY_ID, function*( { payload }) {
+        const messages = yield call(userApi.fetchMessages, payload);
+        if (messages) {
+            yield put(actions.setMessagesById({ messages }));
+        }
+    })
+}
+
+function* watchSendMessage() {
+    yield takeLatest(types.SEND_MESSAGE, function* ({ payload }) {
+        const { message } = payload;
+        const { id } = payload;
+        console.log(`Id is ${id}`);
+        const messageDTO = {
+            contactId: id,
+            message: message,
+            sentDate: moment().format(),
+        };
+        const sendMessage = yield call(userApi.sendDtoMessage, messageDTO);
+        if (sendMessage) {
+            yield put(actions.saveSendMessage({ sendMessage }));
+        }
+
+    })
+}
+
 function* watchLogin() {
     yield takeLatest(types.DO_LOGIN, function*({ payload }) {
         const user = yield call(userApi.LoginUser, payload);
@@ -36,9 +64,12 @@ function* watchLogin() {
     });
 }
 
+
 export default function* rootSaga() {
     yield all([
         initSaga(),
         watchLogin(),
+        watchFetchMessagesById(),
+        watchSendMessage(),
     ])
 }

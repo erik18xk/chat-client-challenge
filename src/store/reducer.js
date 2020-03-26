@@ -1,4 +1,5 @@
 import types from './types';
+import {useDispatch} from "react-redux";
 
 export const initialState = () => ({
     auth: {
@@ -6,6 +7,7 @@ export const initialState = () => ({
         user: {},
     },
     contacts: {},
+    messages: {},
 });
 
 const reducers = (state = initialState(), action) => {
@@ -27,6 +29,24 @@ const reducers = (state = initialState(), action) => {
             return {
                 ...state,
                 ...data.detail,
+            }
+        case types.FETCH_MESSAGES_BY_ID:
+            return {
+                ...state,
+            }
+        case types.SET_MESSAGES_BY_ID:
+            return {
+                ...state,
+                ...data.detail.messages
+            }
+        case types.SEND_MESSAGE:
+            return {
+                ...state, // Change here
+            }
+        case types.SAVE_SEND_MESSAGE:
+            return {
+                ...state,
+                messages: [...state.messages, data.detail.sendMessage] // Used for Append the message in the CHAT page
             }
         default:
             return initialState();

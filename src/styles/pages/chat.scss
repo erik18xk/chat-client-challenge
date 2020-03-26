@@ -1,0 +1,96 @@
+@import '../common/colours';
+
+.chat {
+  &__container {
+    display: flex;
+    flex: 1;
+    min-width: 100%;
+    flex-flow: column;
+    max-height: 100vh; // For add scroll functionality to container__messages
+    background-color: $beige-background;
+  }
+
+  &__header {
+    display: flex;
+    flex: 0;
+    height: 70px;
+    background-color: $gray-dark;
+  }
+
+  &__messages {
+    display: flex;
+    flex: 1;
+    flex-flow: column;
+    font-size: 11px;
+    overflow: auto; // Add scroll functionality
+    overflow-x: hidden;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-bottom: 2em;
+
+    &__item {
+      display: flex;
+      flex: 0;
+      min-width: 100%;
+    }
+
+    &__cloud {
+      display: flex;
+      background-color: $blue-lighter;
+
+      &--send {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        background-color: $grey-message;
+        margin-left: 34%;
+        margin-top: 1.4em;
+        margin-right: 2em;
+        border-radius: 12px;
+      }
+
+      &--received {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        background-color: $white;
+        margin-right: 44%;
+        margin-top: 1.4em;
+        margin-left: 2em;
+        border-radius: 12px;
+      }
+    }
+
+    &__message {
+      padding: 20px 0 20px 20px;
+      display: flex;
+      flex: 1;
+      text-align: left;
+
+      &__date {
+        padding: 20px;
+      }
+    }
+
+  }
+
+  &__send {
+    display: flex;
+    flex-flow: row;
+    flex: 0;
+    min-height: 62px;
+
+    input {
+      box-sizing: border-box;
+      display: flex;
+      flex: 1;
+      font-size: 16px;
+      outline: none;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+  }
+}
