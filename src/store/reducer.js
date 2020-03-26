@@ -5,7 +5,7 @@ export const initialState = () => ({
         isAuth: false,
         user: {},
     },
-    history: {},
+    contacts: {},
 });
 
 const reducers = (state = initialState(), action) => {
@@ -22,6 +22,11 @@ const reducers = (state = initialState(), action) => {
                     isAuth: true,
                     ...data.detail,
                 }
+            }
+        case types.SET_CONTACTS:
+            return {
+                ...state,
+                ...data.detail,
             }
         default:
             return initialState();
