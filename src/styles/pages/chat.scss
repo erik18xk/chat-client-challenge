@@ -14,7 +14,31 @@
     display: flex;
     flex: 0;
     height: 70px;
+    min-height: 70px;
     background-color: $gray-dark;
+
+    a {
+      display: flex;
+      padding: 10px;
+      font-size: 35px;
+      outline: none;
+      text-decoration: none;
+      color: white;
+      font-weight: 300;
+      margin-left: .4em;
+    }
+
+    &__name {
+      color: white;
+      font-size: 34px;
+      text-transform: capitalize;
+      margin-left: .5em;
+      display: flex;
+      flex: 1;
+      justify-content: flex-start;
+      align-items: center;
+
+    }
   }
 
   &__messages {
