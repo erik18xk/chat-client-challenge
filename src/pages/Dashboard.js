@@ -24,7 +24,7 @@ const DashBoard = () => {
             <Switch>
                 <Route path="/dashboard" exact component={ContactsList} />
                 <Route path="/profile" exact>
-                    <h1> Profile </h1>
+                    <h1> TODO :) </h1>
                 </Route>
             </Switch>
         </div>
