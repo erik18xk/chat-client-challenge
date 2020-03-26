@@ -118,5 +118,6 @@ This refactor will be done when the user can successfully login. So I'll jump in
 
 ## Login Page
 
-I've created the branch [feature/login]()
-in this branch I'll focus on the design of the page and the logic behind the login.
+I've created the branch [feature/login-user](https://github.com/erik18xk/chat-client-challenge/commit/62e017003807c2ee3da16f8af16f667d774e32ed)
+I'll use the provided /profile endpoint for check if the user has been authenticated before. This means that until the 
+sessionId is valid the user is authenticated.
