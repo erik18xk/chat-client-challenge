@@ -22,9 +22,6 @@ const setMessagesById = detail => _setMessagesById({ detail });
 const _sendMessage = createAction(types.SEND_MESSAGE);
 const sendMessage = detail => _sendMessage({ detail });
 
-const _saveSendMessage = createAction(types.SAVE_SEND_MESSAGE);
-const saveSendMessage = detail => _saveSendMessage( {detail });
-
 export default {
     initialize,
     doLogin,
@@ -33,5 +30,4 @@ export default {
     fetchMessagesById,
     setMessagesById,
     sendMessage,
-    saveSendMessage
 }

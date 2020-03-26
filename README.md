@@ -143,4 +143,13 @@ All the styles and logic are build in this branch [chat-page](https://github.com
 
 
 ## Header Style
-[style-header]()
+[style-header](https://github.com/erik18xk/chat-client-challenge/commit/319359d38b44676d786c7c84a281f75ca085f269)
+in this branch I've added easy style for the header, since I was using dump components I didn't need to care a lot
+about re-routing, so I've just added and easy link to the /dashboard page. In a real world application I would decouple
+the header from the Chat page writing a separate component for it. I'll discuss more in #improvement section.
+
+
+## Sync Everything
+At this moment my app is working properly but I need to refactor some logic for a better sync between store and API calls.
+[sync]() is the branch for the refactor.
+ 

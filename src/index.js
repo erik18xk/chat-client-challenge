@@ -8,7 +8,6 @@ import configureStore from "./configureStore";
 import { BrowserRouter } from 'react-router-dom';
 
 const store = configureStore();
-console.log(store);
 
 ReactDOM.render(
     <Provider store={store}>

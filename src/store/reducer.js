@@ -43,11 +43,6 @@ const reducers = (state = initialState(), action) => {
             return {
                 ...state, // Change here
             }
-        case types.SAVE_SEND_MESSAGE:
-            return {
-                ...state,
-                messages: [...state.messages, data.detail.sendMessage] // Used for Append the message in the CHAT page
-            }
         default:
             return initialState();
     }
