@@ -7,7 +7,6 @@ const ContactsList = () => {
     const contacts = useSelector(state => state.contacts);
     let list;
     if (contacts && contacts.length) {
-        console.log(contacts);
         list = contacts.map(el => {
             return (
                 <List props={el} key={el.id}/>

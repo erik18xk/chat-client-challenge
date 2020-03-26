@@ -12,6 +12,7 @@ TODO stuff I've to implement inside my App. For every point I'll discuss more in
 - [x] Contacts Page
 - [ ] Profile Page
 - [x] Chat Page
+- [x] Eslint
 - [ ] More...
 
 
@@ -151,5 +152,9 @@ the header from the Chat page writing a separate component for it. I'll discuss 
 
 ## Sync Everything
 At this moment my app is working properly but I need to refactor some logic for a better sync between store and API calls.
-[sync]() is the branch for the refactor.
+[sync](https://github.com/erik18xk/chat-client-challenge/commit/b03814e9a4d67f3efda8839ac0781166b6c5dcc5) is the branch for the refactor.
  
+ 
+## Eslint my code
+Now that everything is working I'm going to fix all the warning and clean all console.log() inside my code ;).
+The branch is [eslint]()
