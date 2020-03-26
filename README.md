@@ -11,7 +11,7 @@ TODO stuff I've to implement inside my App. For every point I'll discuss more in
 - [x] Login Page
 - [x] Contacts Page
 - [ ] Profile Page
-- [ ] Chat Page
+- [x] Chat Page
 - [ ] More...
 
 
@@ -132,3 +132,11 @@ for handle such feature.
 First thing first I have to retrieve all the missing data from the api -> contacts of my current user.
 I'll make this fetch call after the login/check, saving the response the the contacts data. I've added some style followind
 the screenshot provided to me.
+
+
+## Chat page
+For the chat page I want to use a walkaround that I think will perfectly fit with my need. Instead of using
+redux as source of truth I'll use the api endpoint, this means that I'll save in redux just the 
+messages I need for that user.
+
+All the styles and logic are build in this branch [chat-page]().

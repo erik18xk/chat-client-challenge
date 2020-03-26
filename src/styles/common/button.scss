@@ -21,6 +21,7 @@
   box-sizing: border-box;
   cursor: pointer;
   text-transform: uppercase;
+  outline: none;
   overflow: visible; //IE fix
 
   &--full-width {
@@ -33,6 +34,15 @@
   &--inline {
     display: flex;
     flex: 1;
+  }
+
+  &--with-input {
+    display: flex;
+    line-height: 12px;
+    font-size: 15px;
+    flex: 0;
+    min-width: 66px;
+    min-height: 0px;
   }
 
   &--green {

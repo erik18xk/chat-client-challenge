@@ -1,15 +1,21 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import '../styles/components/list.scss';
+import { useDispatch } from 'react-redux';
 
 const List = ({ props }) => {
+    const dispatch = useDispatch()
 
     const getFullName = (name, surname) => {
         return `${name} ${surname}`
     }
 
+    const fetchMessages = (id) => {
+        dispatch({ type: 'CHAT.FETCH_MESSAGES_BY_ID', payload: {id}})
+    }
+
     return (
-        <Link to={`chat/${props.id}`} className="contact__container">
+        <Link to={`chat/${props.id}`} className="contact__container" onClick={() => fetchMessages( props.id )}>
             <div className="contact__user-image">
                 <img src={props.avatar} />
             </div>
@@ -18,7 +24,7 @@ const List = ({ props }) => {
             </div>
             <div className="contact__description">
                 <div className="contact__date">
-                    10.55
+                    22:15
                 </div>
                 <div className="contact__description__unread">
                     { props.unreadCount}

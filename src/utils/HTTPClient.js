@@ -4,7 +4,7 @@ const _fetch = async (uri, params) => {
 
     const result = await fetch(uri, {
         cache: 'no-store',
-        credentials: 'include',
+        credentials: 'include', // Used for keep sessionId stored in the fetchApi
         ...params,
         headers: new Headers({ ...params.headers })
     });
