@@ -2,10 +2,6 @@ import "../styles/pages/login.scss";
 import React, { useState } from 'react';
 import Button from "../components/Button";
 import { useDispatch } from 'react-redux';
-import { Link } from 'react-router-dom';
-
-// TODO fix the style for this component and create input component passing element from child to parent, Add label
-// TODO Add type password
 
 const Login = () => {
     const dispatch = useDispatch()
@@ -22,7 +18,7 @@ const Login = () => {
                 <div className="form__handler__form">
                     <h1> Username </h1>
                     <input onChange={e => setUsername(e.target.value)} />
-                    <h1> Password </h1>
+                    <h1 type="password"> Password </h1>
                     <input onChange={e => setPassword(e.target.value)} />
                 </div>
             </div>

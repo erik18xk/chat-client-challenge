@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import Button from "../components/Button";
 import moment from "moment";
 import '../styles/pages/chat.scss';
-import List from "../components/List";
 
 // TODO create separate Header
 

@@ -17,7 +17,7 @@ const List = ({ props }) => {
     return (
         <Link to={`chat/${props.id}`} className="contact__container" onClick={() => fetchMessages( props.id )}>
             <div className="contact__user-image">
-                <img src={props.avatar} />
+                <img src={props.avatar} alt={props.avatar}/>
             </div>
             <div className="contact__user-name">
                 <h3> { getFullName(props.name, props.surname) } </h3>

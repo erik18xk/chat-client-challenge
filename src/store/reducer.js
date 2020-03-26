@@ -1,5 +1,4 @@
 import types from './types';
-import {useDispatch} from "react-redux";
 
 export const initialState = () => ({
     auth: {
