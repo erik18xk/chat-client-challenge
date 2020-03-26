@@ -140,3 +140,7 @@ redux as source of truth I'll use the api endpoint, this means that I'll save in
 messages I need for that user.
 
 All the styles and logic are build in this branch [chat-page](https://github.com/erik18xk/chat-client-challenge/commit/e5cc9211deddc2512a53ce2f1aed1b4408595bb1).
+
+
+## Header Style
+[style-header]()
